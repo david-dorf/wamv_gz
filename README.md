@@ -1,8 +1,10 @@
 # wamv_gz
 WAM-V Simulation for ROS 2 Jazzy + Gazebo Harmonic
 
+[Screencast from 2024-12-29 18-36-39.webm](https://github.com/user-attachments/assets/71d9622f-a003-4d59-bfaf-0f32e410608c)
+
 ## Installation
-1. Download ROS 2 Jazzy and Gazebo Harmonic with ROS 2 packages
+1. Download [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html) and [Gazebo Harmonic with ROS 2 packages](https://gazebosim.org/docs/latest/ros_installation/)
 2. Create a ROS 2 workspace and clone this repository into the /src directory
 3. Run the following terminal commands in the root directory of the ROS 2 workspace:
 ```bash
