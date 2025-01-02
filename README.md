@@ -4,7 +4,7 @@ WAM-V Simulation for ROS 2 Jazzy + Gazebo Harmonic on Ubuntu 24.04
 [Screencast from 2024-12-29 18-36-39.webm](https://github.com/user-attachments/assets/71d9622f-a003-4d59-bfaf-0f32e410608c)
 
 ## Installation
-1. Download [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html)
+1. Download [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)
 2. Download [Gazebo Harmonic](https://gazebosim.org/docs/harmonic/install_ubuntu/)
 3. Download ros_gz with `sudo apt-get install ros-jazzy-ros-gz`
 4. Create a ROS 2 workspace and clone this repository into the /src directory
