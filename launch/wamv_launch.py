@@ -3,23 +3,22 @@ from launch_ros.actions import Node
 from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
-from ament_index_python.packages import get_package_share_directory
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
-    pkg_wamv_gz = get_package_share_directory('wamv_gz')
+    pkg_ros_gz_sim = FindPackageShare('ros_gz_sim')
+    pkg_wamv_gz = FindPackageShare('wamv_gz')
     gz_launch_path = PathJoinSubstitution([pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py'])
 
     return LaunchDescription([
         SetEnvironmentVariable(
             'GZ_SIM_RESOURCE_PATH',
-            PathJoinSubstitution([FindPackageShare('wamv_gz'), 'models'])
+            PathJoinSubstitution([pkg_wamv_gz, 'models'])
         ),
         SetEnvironmentVariable(
             'GZ_SIM_PLUGIN_PATH',
-            PathJoinSubstitution([FindPackageShare('wamv_gz'), 'plugins'])
+            PathJoinSubstitution([pkg_wamv_gz, 'plugins'])
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(gz_launch_path),
