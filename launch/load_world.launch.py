@@ -9,7 +9,7 @@ def generate_launch_description():
     return LaunchDescription([
         SetEnvironmentVariable(
             'GZ_SIM_RESOURCE_PATH',
-            PathJoinSubstitution([FindPackageShare('spaceros_gz_demos'), 'models'])
+            PathJoinSubstitution([FindPackageShare('wamv_gz'), 'models'])
         ),
         DeclareLaunchArgument(
             'world_file',
