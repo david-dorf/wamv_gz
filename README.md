@@ -1,5 +1,5 @@
 # wamv_gz
-WAM-V Simulation for ROS 2 Jazzy + Gazebo Harmonic on Ubuntu 24.04
+Simple WAM-V Simulation for ROS 2 Jazzy + Gazebo Harmonic on Ubuntu 24.04 based on [VRX](https://github.com/osrf/vrx)
 
 [Screencast from 2024-12-29 18-36-39.webm](https://github.com/user-attachments/assets/71d9622f-a003-4d59-bfaf-0f32e410608c)
 
