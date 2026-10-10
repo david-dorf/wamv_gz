@@ -10,6 +10,7 @@ WAM-V Simulation for ROS 2 Jazzy + Gazebo Harmonic on Ubuntu 24.04
 4. Create a ROS 2 workspace and clone this repository into the /src directory
 5. Run the following terminal commands in the root directory of the ROS 2 workspace:
 ```bash
+rosdep install --from-paths src --ignore-src -y
 colcon build
 source install/setup.bash
 ros2 launch wamv_gz wamv_launch.py
